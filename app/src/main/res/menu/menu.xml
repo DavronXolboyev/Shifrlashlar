@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="@string/usullar">
+        <menu>
+            <item
+                android:id="@+id/sezarM"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="@string/sezar" />
+            <item
+                android:id="@+id/vijinerM"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="@string/vijiner" />
+            <item
+                android:id="@+id/rsaM"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="@string/rsa" />
+            <item
+                android:id="@+id/polibiyaM"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="@string/polibiya" />
+            <item
+                android:id="@+id/affianM"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="@string/affian" />
+            <item
+                android:id="@+id/elgamanM"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="@string/elgaman" />
+            <item
+                android:id="@+id/gamiltonM"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="@string/gamilton" />
+        </menu>
+    </item>
+
+    <item android:title="@string/info">
+        <menu>
+            <item
+                android:id="@+id/programmers"
+                android:icon="@drawable/ic_baseline_info_24"
+                android:title="@string/programmers" />
+            <item
+                android:id="@+id/allApps"
+                android:icon="@drawable/ic_baseline_android_24"
+                android:title="@string/apps" />
+        </menu>
+    </item>
+
+</menu>

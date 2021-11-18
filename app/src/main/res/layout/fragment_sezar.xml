@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SezarFr">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="@string/sezar"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/keySezar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/style"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/carter_one"
+        android:hint="@string/kalitV"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSezar" />
+
+    <EditText
+        android:id="@+id/textSezar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/style"
+        android:drawableStart="@drawable/ic_baseline_text_fields_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/carter_one"
+        android:hint="@string/matn"
+        android:inputType="text"
+        android:maxLength="25"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convertSezar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:text="@string/start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keySezar" />
+
+    <TextView
+        android:id="@+id/resultSezar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertSezar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

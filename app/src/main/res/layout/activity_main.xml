@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="@string/text"
+        android:textColor="@color/purple_500"
+        android:textSize="35sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/shifrBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="70dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/button1"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_lock_24"
+        app:layout_constraintBottom_toTopOf="@+id/deshifrBtn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deshifrBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="70dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/carter_one"
+        android:text="@string/button2"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_lock_open_24" />
+
+</LinearLayout>

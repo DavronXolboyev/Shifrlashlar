@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.GamiltonFr">
+
+    <TextView
+        android:id="@+id/gamilton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="@string/gamilton"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textGamilton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style"
+        android:drawableStart="@drawable/ic_baseline_text_fields_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/carter_one"
+        android:hint="@string/matn"
+        android:inputType="text"
+        android:maxLength="32"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/gamilton"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getKeyG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/kalitV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGamilton" />
+
+    <EditText
+        android:id="@+id/keyGamilton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:fontFamily="@font/carter_one"
+        android:hint="@string/kalitV"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/getKeyG" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convertGamilton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:text="@string/start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keyGamilton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clearGamilton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:padding="15dp"
+        android:text="@string/clear"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/convertGamilton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <TextView
+        android:id="@+id/resultGamilton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertGamilton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

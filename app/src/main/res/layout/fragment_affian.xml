@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AffianFr">
+
+    <TextView
+        android:id="@+id/affian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="@string/affian"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/toqSonAf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:hint="@string/toq"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/affian" />
+
+    <EditText
+        android:id="@+id/sonB_Af"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/style"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:hint="@string/son"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toqSonAf"
+        app:layout_constraintTop_toTopOf="@+id/toqSonAf" />
+
+    <EditText
+        android:id="@+id/textAffian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/style"
+        android:drawableStart="@drawable/ic_baseline_text_fields_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/carter_one"
+        android:hint="@string/matn"
+        android:inputType="text"
+        android:maxLength="25"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toqSonAf" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convertAffian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:text="@string/start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAffian" />
+
+    <TextView
+        android:id="@+id/resultAf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertAffian" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

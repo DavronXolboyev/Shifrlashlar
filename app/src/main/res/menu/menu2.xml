@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/shifrlashM"
+        android:title="@string/button1" />
+    <item
+        android:id="@+id/deshifrlashM"
+        android:title="@string/button2" />
+    <item
+        android:id="@+id/exitM"
+        android:title="@string/exit" />
+    <item
+        android:id="@+id/infoM"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/info"
+        app:showAsAction="always" />
+</menu>

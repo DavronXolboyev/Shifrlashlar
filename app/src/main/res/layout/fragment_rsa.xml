@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RsaFr">
+
+    <TextView
+        android:id="@+id/rsa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="@string/rsa"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="@string/tub"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rsa" />
+
+    <EditText
+        android:id="@+id/tubP"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/style"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:hint="@string/p"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTub" />
+
+    <EditText
+        android:id="@+id/tubQ"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/style"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:hint="@string/q"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tubP" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <EditText
+        android:id="@+id/textRSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style"
+        android:drawableStart="@drawable/ic_baseline_text_fields_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/carter_one"
+        android:hint="@string/matn"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tubP" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convertRSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:text="@string/start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRSA" />
+
+    <TextView
+        android:id="@+id/resultRSA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertRSA" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
